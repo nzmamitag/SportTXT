@@ -1,0 +1,79 @@
+body {
+    height: 100vh auto;
+    margin-top: 75px;
+    background-image: radial-gradient(#0000000a 2px, transparent 2px);
+    background-size: 26px 26px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact {
+    display: flex;
+    flex: 1;
+    padding: 50px;
+
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    flex: .5;
+    color: white;
+    background: rgb(2, 92, 161);
+    background: linear-gradient(338deg, rgb(2, 92, 161) 25%, rgb(226, 27, 37) 100%);
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    border-radius: 10px;
+}
+
+.section2 {
+    display: flex;
+    flex: .5;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: 630px;
+}
+
+.section2 h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 150px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        padding: 10px;
+    }
+
+    .section1 {
+        flex: .8;
+    }
+
+    .section2 {
+        flex: .2;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact {
+        flex-direction: column-reverse;
+    }
+}
